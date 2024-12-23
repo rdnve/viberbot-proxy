@@ -10,10 +10,16 @@ from viberbot.api.message_sender import MessageSender
 
 
 class Api(object):
-	def __init__(self, bot_configuration):
+	def __init__(self, bot_configuration, proxies = None):
 		self._logger = logging.getLogger('viber.bot.api')
 		self._bot_configuration = bot_configuration
-		self._request_sender = ApiRequestSender(self._logger, VIBER_BOT_API_URL, bot_configuration, VIBER_BOT_USER_AGENT)
+		self._request_sender = ApiRequestSender(
+			self._logger,
+			VIBER_BOT_API_URL,
+			bot_configuration,
+			VIBER_BOT_USER_AGENT,
+			proxies,
+		)
 		self._message_sender = MessageSender(self._logger, self._request_sender, bot_configuration)
 
 	@property

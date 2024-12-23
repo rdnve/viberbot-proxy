@@ -6,11 +6,12 @@ import json
 
 
 class ApiRequestSender(object):
-	def __init__(self, logger, viber_bot_api_url, bot_configuration, viber_bot_user_agent):
+	def __init__(self, logger, viber_bot_api_url, bot_configuration, viber_bot_user_agent, proxies = None):
 		self._logger = logger
 		self._viber_bot_api_url = viber_bot_api_url
 		self._bot_configuration = bot_configuration
 		self._user_agent = viber_bot_user_agent
+		self._proxies = proxies
 
 	def set_webhook(self, url, webhook_events=None, is_inline=False):
 		payload = {
@@ -47,7 +48,12 @@ class ApiRequestSender(object):
 			headers.update({
 				'User-Agent': self._user_agent
 			})
-			response = requests.post(self._viber_bot_api_url + '/' + endpoint, data=payload, headers=headers)
+			response = requests.post(
+				self._viber_bot_api_url + '/' + endpoint,
+				data=payload,
+				headers=headers,
+				proxies=self._proxies,
+			)
 			response.raise_for_status()
 			return json.loads(response.text)
 		except RequestException as e:

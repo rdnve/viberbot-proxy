@@ -116,3 +116,6 @@ ENV/
 
 .DS_Store
 .idea/
+
+pyproject.toml
+poetry.lock
