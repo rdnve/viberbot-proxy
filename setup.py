@@ -5,7 +5,7 @@ setup(
     version=__version__,
     packages=['viberbot', 'viberbot.api', 'viberbot.api.viber_requests',
               'viberbot.api.messages', 'viberbot.api.messages.data_types'],
-    install_requires=['future', 'requests'],
+    install_requires=['requests'],
     tests_require=['pytest'],
     url='https://github.com/Viber/viber-bot-python',
 )
