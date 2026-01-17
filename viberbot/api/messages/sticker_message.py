@@ -1,4 +1,3 @@
-from future.utils import python_2_unicode_compatible
 from viberbot.api.messages.typed_message import TypedMessage
 from viberbot.api.messages.message_type import MessageType
 
@@ -26,7 +25,3 @@ class StickerMessage(TypedMessage):
 	def validate(self):
 		return super(StickerMessage, self).validate() \
 				and self._sticker_id is not None
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"StickerMessage [{0}, sticker_id={1}]".format(super(StickerMessage, self).__str__(), self._sticker_id)

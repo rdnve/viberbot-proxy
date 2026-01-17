@@ -1,4 +1,3 @@
-from future.utils import python_2_unicode_compatible
 from viberbot.api import messages
 from viberbot.api.event_type import EventType
 from viberbot.api.user_profile import UserProfile
@@ -48,16 +47,3 @@ class ViberMessageRequest(ViberRequest):
 	@property
 	def silent(self):
 		return self._silent
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"ViberMessageRequest [{0}, message_token={1}, sender={2}, " \
-			u"message={3}, chat_id={4}, reply_type={5}, silent={6}]" \
-			.format(
-				super(ViberMessageRequest, self).__str__(),
-				self._message_token,
-				self._sender,
-				self._message,
-				self._chat_id,
-				self._reply_type,
-				self._silent)

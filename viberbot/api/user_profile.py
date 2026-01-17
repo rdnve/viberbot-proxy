@@ -1,5 +1,3 @@
-from future.utils import python_2_unicode_compatible
-
 
 class UserProfile(object):
 	def __init__(self, name=None, avatar=None, user_id=None, country=None, language=None, api_version=None):
@@ -48,14 +46,3 @@ class UserProfile(object):
 		if 'api_version' in user_dict:
 			self._api_version = user_dict['api_version']
 		return self
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"UserProfile[name={0}, avatar={1}, id={2}, country={3}, language={4}, api_version={5}"\
-			.format(
-			self._name,
-			self._avatar,
-			self._id,
-			self._country,
-			self._language,
-			self._api_version)

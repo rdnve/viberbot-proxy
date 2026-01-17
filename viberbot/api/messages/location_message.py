@@ -1,4 +1,3 @@
-from future.utils import python_2_unicode_compatible
 from viberbot.api.messages.data_types.location import Location
 from viberbot.api.messages.typed_message import TypedMessage
 from viberbot.api.messages.message_type import MessageType
@@ -28,10 +27,3 @@ class LocationMessage(TypedMessage):
 	def validate(self):
 		return super(LocationMessage, self).validate() \
 				and self._location and self._location.validate()
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"LocationMessage [{0}, contact={1}]"\
-			.format(
-				super(LocationMessage, self).__str__(),
-				self._location)

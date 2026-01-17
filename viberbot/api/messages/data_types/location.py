@@ -1,5 +1,3 @@
-from future.utils import python_2_unicode_compatible
-
 
 class LocationConsts(object):
 	MAX_LONGITUDE = 180
@@ -45,7 +43,3 @@ class Location(object):
 
 	def __eq__(self, other):
 		return self._lat == other.latitude and self._lon == other.longitude
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"Location[lat={0}, lon={1}]".format(self._lat, self._lon)

@@ -1,4 +1,3 @@
-from future.utils import python_2_unicode_compatible
 from abc import abstractmethod
 from viberbot.api.messages.message import Message
 
@@ -25,7 +24,3 @@ class TypedMessage(Message):
 		validates message has all the required fields before send
 		"""
 		return self._message_type is not None
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return super(TypedMessage, self).__str__()

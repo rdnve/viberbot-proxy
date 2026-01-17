@@ -1,4 +1,3 @@
-from future.utils import python_2_unicode_compatible
 from viberbot.api.messages.typed_message import TypedMessage
 from viberbot.api.messages.message_type import MessageType
 
@@ -26,7 +25,3 @@ class TextMessage(TypedMessage):
 	@property
 	def text(self):
 		return self._text
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"TextMessage [{0}, text={1}]".format(super(TextMessage, self).__str__(), self._text)

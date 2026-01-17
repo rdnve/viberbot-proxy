@@ -1,4 +1,3 @@
-from future.utils import python_2_unicode_compatible
 from viberbot.api.messages.typed_message import TypedMessage
 from viberbot.api.messages.message_type import MessageType
 
@@ -34,11 +33,3 @@ class RichMediaMessage(TypedMessage):
 	@property
 	def alt_text(self):
 		return self._alt_text
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"RichMediaMessage [{0}, rich_media={1}]"\
-			.format(
-				super(RichMediaMessage, self).__str__(),
-				self._rich_media,
-				self._alt_text)

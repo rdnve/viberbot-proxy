@@ -1,4 +1,3 @@
-from future.utils import python_2_unicode_compatible
 from viberbot.api.messages.typed_message import TypedMessage
 from viberbot.api.messages.message_type import MessageType
 
@@ -42,12 +41,3 @@ class PictureMessage(TypedMessage):
 	@property
 	def thumbnail(self):
 		return self._thumbnail
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"PictureMessage [{0}, text={1}, media={2}, thumbnail={3}]"\
-			.format(
-				super(PictureMessage, self).__str__(),
-				self._text,
-				self._media,
-				self._thumbnail)

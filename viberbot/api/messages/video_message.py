@@ -1,4 +1,3 @@
-from future.utils import python_2_unicode_compatible
 from viberbot.api.messages.typed_message import TypedMessage
 from viberbot.api.messages.message_type import MessageType
 
@@ -59,14 +58,3 @@ class VideoMessage(TypedMessage):
 	@property
 	def text(self):
 		return self._text
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"VideoMessage [{0}, media={1}, thumbnail={2}, size={3}, duration={4} text={5}]".\
-			format(
-				super(VideoMessage, self).__str__(),
-				self._media,
-				self._thumbnail,
-				self._size,
-				self._duration,
-				self._text)

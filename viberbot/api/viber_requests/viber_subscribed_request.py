@@ -1,4 +1,3 @@
-from future.utils import python_2_unicode_compatible
 from viberbot.api.event_type import EventType
 from viberbot.api.user_profile import UserProfile
 from viberbot.api.viber_requests.viber_request import ViberRequest
@@ -24,8 +23,3 @@ class ViberSubscribedRequest(ViberRequest):
 	@property
 	def api_version(self):
 		return self._api_version
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"ViberSubscribedRequest [{0}, user={1}]" \
-			.format(super(ViberSubscribedRequest, self).__str__(), self._user)

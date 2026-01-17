@@ -1,4 +1,3 @@
-from future.utils import python_2_unicode_compatible
 from viberbot.api.messages.data_types.contact import Contact
 from viberbot.api.messages.typed_message import TypedMessage
 from viberbot.api.messages.message_type import MessageType
@@ -30,10 +29,3 @@ class ContactMessage(TypedMessage):
 				and self._contact is not None \
 				and self._contact.name is not None \
 				and self._contact.phone_number is not None
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"ContactMessage [{0}, contact={1}]". \
-			format(
-				super(ContactMessage, self).__str__(),
-				self._contact)

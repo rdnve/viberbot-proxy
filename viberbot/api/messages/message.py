@@ -1,4 +1,3 @@
-from future.utils import python_2_unicode_compatible
 from abc import abstractmethod
 
 
@@ -50,11 +49,3 @@ class Message(object):
 		validates message has all the required fields before send
 		"""
 		pass
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"tracking_data={0}, keyboard={1}, min_api_version={2}"\
-			.format(
-				self._tracking_data,
-				self._keyboard,
-				self._min_api_version)

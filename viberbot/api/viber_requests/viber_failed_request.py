@@ -1,5 +1,4 @@
 import warnings
-from future.utils import python_2_unicode_compatible
 from viberbot.api.event_type import EventType
 from viberbot.api.viber_requests.viber_request import ViberRequest
 
@@ -34,12 +33,3 @@ class ViberFailedRequest(ViberRequest):
 	@property
 	def desc(self):
 		return self._desc
-
-	@python_2_unicode_compatible
-	def __str__(self):
-		return u"ViberFailedRequest [{0}, message_token={1}, user_id={2}, desc={3}]" \
-			.format(
-				super(ViberFailedRequest, self).__str__(),
-				self._message_token,
-				self._user_id,
-				self._desc)
