@@ -1,6 +1,6 @@
-from viberbot.api.messages.data_types.location import Location
-from viberbot.api.messages.typed_message import TypedMessage
-from viberbot.api.messages.message_type import MessageType
+from viberbot_prox.api.messages.data_types.location import Location
+from viberbot_prox.api.messages.typed_message import TypedMessage
+from viberbot_prox.api.messages.message_type import MessageType
 
 
 class LocationMessage(TypedMessage):

@@ -1,5 +1,5 @@
-from viberbot.api.event_type import EventType
-from viberbot.api.viber_requests.viber_request import ViberRequest
+from viberbot_prox.api.event_type import EventType
+from viberbot_prox.api.viber_requests.viber_request import ViberRequest
 
 
 class ViberUnsubscribedRequest(ViberRequest):

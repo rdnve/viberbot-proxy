@@ -1,7 +1,7 @@
-from viberbot.api import messages
-from viberbot.api.event_type import EventType
-from viberbot.api.user_profile import UserProfile
-from viberbot.api.viber_requests.viber_request import ViberRequest
+from viberbot_prox.api import messages
+from viberbot_prox.api.event_type import EventType
+from viberbot_prox.api.user_profile import UserProfile
+from viberbot_prox.api.viber_requests.viber_request import ViberRequest
 
 
 class ViberMessageRequest(ViberRequest):

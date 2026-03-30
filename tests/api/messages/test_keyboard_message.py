@@ -1,4 +1,4 @@
-from viberbot.api.messages import KeyboardMessage
+from viberbot_prox.api.messages import KeyboardMessage
 
 SAMPLE_TRACKING_DATA = "some tracking data"
 SAMPLE_KEYBOARD = {

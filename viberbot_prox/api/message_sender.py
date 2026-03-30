@@ -1,6 +1,6 @@
 import json
 
-from viberbot.api.consts import BOT_API_ENDPOINT
+from viberbot_prox.api.consts import BOT_API_ENDPOINT
 
 
 class MessageSender(object):

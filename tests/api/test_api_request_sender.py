@@ -3,10 +3,10 @@ import logging
 
 import pytest
 
-from viberbot.api.api_request_sender import ApiRequestSender
-from viberbot.api.bot_configuration import BotConfiguration
-from viberbot.api.consts import BOT_API_ENDPOINT, VIBER_BOT_USER_AGENT
-from viberbot.api.event_type import EventType
+from viberbot_prox.api.api_request_sender import ApiRequestSender
+from viberbot_prox.api.bot_configuration import BotConfiguration
+from viberbot_prox.api.consts import BOT_API_ENDPOINT, VIBER_BOT_USER_AGENT
+from viberbot_prox.api.event_type import EventType
 
 
 class Stub(object): pass

@@ -1,6 +1,6 @@
 import warnings
 from ..event_type import EventType
-from viberbot.api.viber_requests.viber_request import ViberRequest
+from viberbot_prox.api.viber_requests.viber_request import ViberRequest
 
 
 class ViberSeenRequest(ViberRequest):

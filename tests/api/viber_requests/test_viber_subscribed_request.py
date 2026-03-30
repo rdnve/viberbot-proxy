@@ -1,8 +1,8 @@
 from datetime import datetime
 
-from viberbot.api.event_type import EventType
-from viberbot.api.viber_requests import ViberSubscribedRequest
-from viberbot.api.viber_requests import create_request
+from viberbot_prox.api.event_type import EventType
+from viberbot_prox.api.viber_requests import ViberSubscribedRequest
+from viberbot_prox.api.viber_requests import create_request
 
 SAMPLE_REQUEST = dict(
 	event=EventType.SUBSCRIBED,

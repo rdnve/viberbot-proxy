@@ -1,5 +1,5 @@
 from abc import abstractmethod
-from viberbot.api.messages.message import Message
+from viberbot_prox.api.messages.message import Message
 
 
 class TypedMessage(Message):

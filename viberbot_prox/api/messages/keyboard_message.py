@@ -1,4 +1,4 @@
-from viberbot.api.messages.message import Message
+from viberbot_prox.api.messages.message import Message
 
 
 class KeyboardMessage(Message):

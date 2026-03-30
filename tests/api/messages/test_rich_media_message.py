@@ -1,5 +1,5 @@
-from viberbot.api.messages import MessageType
-from viberbot.api.messages import RichMediaMessage
+from viberbot_prox.api.messages import MessageType
+from viberbot_prox.api.messages import RichMediaMessage
 
 SAMPLE_TRACKING_DATA = "some tracking data"
 SAMPLE_KEYBOARD = """{

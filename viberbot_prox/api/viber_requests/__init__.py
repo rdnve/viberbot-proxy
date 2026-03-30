@@ -1,12 +1,12 @@
-from viberbot.api.event_type import EventType
-from viberbot.api.viber_requests.viber_conversation_started_request import ViberConversationStartedRequest
-from viberbot.api.viber_requests.viber_delivered_request import ViberDeliveredRequest
-from viberbot.api.viber_requests.viber_failed_request import ViberFailedRequest
-from viberbot.api.viber_requests.viber_message_request import ViberMessageRequest
-from viberbot.api.viber_requests.viber_request import ViberRequest
-from viberbot.api.viber_requests.viber_seen_request import ViberSeenRequest
-from viberbot.api.viber_requests.viber_subscribed_request import ViberSubscribedRequest
-from viberbot.api.viber_requests.viber_unsubscribed_request import ViberUnsubscribedRequest
+from viberbot_prox.api.event_type import EventType
+from viberbot_prox.api.viber_requests.viber_conversation_started_request import ViberConversationStartedRequest
+from viberbot_prox.api.viber_requests.viber_delivered_request import ViberDeliveredRequest
+from viberbot_prox.api.viber_requests.viber_failed_request import ViberFailedRequest
+from viberbot_prox.api.viber_requests.viber_message_request import ViberMessageRequest
+from viberbot_prox.api.viber_requests.viber_request import ViberRequest
+from viberbot_prox.api.viber_requests.viber_seen_request import ViberSeenRequest
+from viberbot_prox.api.viber_requests.viber_subscribed_request import ViberSubscribedRequest
+from viberbot_prox.api.viber_requests.viber_unsubscribed_request import ViberUnsubscribedRequest
 
 EVENT_TYPE_TO_CLASS = {
 	EventType.MESSAGE: ViberMessageRequest,

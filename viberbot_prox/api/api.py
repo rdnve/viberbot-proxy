@@ -3,10 +3,10 @@ import hmac
 import json
 import logging
 
-from viberbot.api.consts import VIBER_BOT_API_URL, VIBER_BOT_USER_AGENT
-from viberbot.api.viber_requests import create_request
-from viberbot.api.api_request_sender import ApiRequestSender
-from viberbot.api.message_sender import MessageSender
+from viberbot_prox.api.consts import VIBER_BOT_API_URL, VIBER_BOT_USER_AGENT
+from viberbot_prox.api.viber_requests import create_request
+from viberbot_prox.api.api_request_sender import ApiRequestSender
+from viberbot_prox.api.message_sender import MessageSender
 
 
 class Api(object):

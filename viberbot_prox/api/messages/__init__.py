@@ -1,14 +1,14 @@
-from viberbot.api.messages.contact_message import ContactMessage
-from viberbot.api.messages.file_message import FileMessage
-from viberbot.api.messages.picture_message import PictureMessage
-from viberbot.api.messages.sticker_message import StickerMessage
-from viberbot.api.messages.url_message import URLMessage
-from viberbot.api.messages.video_message import VideoMessage
-from viberbot.api.messages.message_type import MessageType
-from viberbot.api.messages.text_message import TextMessage
-from viberbot.api.messages.location_message import LocationMessage
-from viberbot.api.messages.rich_media_message import RichMediaMessage
-from viberbot.api.messages.keyboard_message import KeyboardMessage
+from viberbot_prox.api.messages.contact_message import ContactMessage
+from viberbot_prox.api.messages.file_message import FileMessage
+from viberbot_prox.api.messages.picture_message import PictureMessage
+from viberbot_prox.api.messages.sticker_message import StickerMessage
+from viberbot_prox.api.messages.url_message import URLMessage
+from viberbot_prox.api.messages.video_message import VideoMessage
+from viberbot_prox.api.messages.message_type import MessageType
+from viberbot_prox.api.messages.text_message import TextMessage
+from viberbot_prox.api.messages.location_message import LocationMessage
+from viberbot_prox.api.messages.rich_media_message import RichMediaMessage
+from viberbot_prox.api.messages.keyboard_message import KeyboardMessage
 
 MESSAGE_TYPE_TO_CLASS = {
 	MessageType.URL: URLMessage,

@@ -1,7 +1,7 @@
 import requests
 from requests import RequestException
 import traceback
-from viberbot.api.consts import BOT_API_ENDPOINT
+from viberbot_prox.api.consts import BOT_API_ENDPOINT
 import json
 
 

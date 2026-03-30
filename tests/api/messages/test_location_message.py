@@ -1,6 +1,6 @@
-from viberbot.api.messages import LocationMessage
-from viberbot.api.messages import MessageType
-from viberbot.api.messages.data_types.location import Location
+from viberbot_prox.api.messages import LocationMessage
+from viberbot_prox.api.messages import MessageType
+from viberbot_prox.api.messages.data_types.location import Location
 
 SAMPLE_TRACKING_DATA = "some tracking data"
 SAMPLE_KEYBOARD = """{
